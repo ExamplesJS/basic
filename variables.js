@@ -1,17 +1,7 @@
 /**
-<<<<<<< HEAD
 @description
 Variáveis são representações dinâmicas de uma propriedade ou dado.
 Em javascript possuímos três tipos de declaração para váriaveis:
-=======
-    Variáveis são representações dinâmicas de uma propriedade ou dado.
-    Em javascript possuímos três tipos de declaração para váriaveis:
-    @argument var representa uma váriavel de escopo global ou de escopo, dependendo de onde é declarada.
-    @argument let representa uma váriavel somente de escopo de onde é declarada.
-    @argument const representa uma váriavel constante que não muda após ser definida.
-*/
->>>>>>> 7fbb7421e292ed4bc86fa9a4b66eb1ea7fe1db7b
-
 @argument var @description
 representa uma váriavel de escopo global ou de função, dependendo de onde é declarada.
 @argument let @description

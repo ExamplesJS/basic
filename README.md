@@ -7,3 +7,5 @@ Here goes the demonstration of some examples for you to use with JavaScript
 - [Types of Variables](https://github.com/ExamplesJS/basic/blob/master/types.js)
   In this example we want to show the dinamic types `number, string, boolean` and
   primitive types `Boolean, Null, Undefined, Number and String`. 
+- [Type Object](https://github.com/ExamplesJS/basic/blob/master/objects.js)
+  In this example we want to show the type `Object`. 

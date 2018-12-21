@@ -10,10 +10,10 @@
         @argument class
         @argument Object
 
-        
         @var {Object} exampleObject, as declared utilizing @argument var, 
         are utilize {} to representation of object, into object their properties 
-        can be declare between "", '' or none, by default utilize "", after declare, set the value with :
+        can be declare between "", '' or none, by default utilize "", after declare, set the value with :,
+        this value declared use "", '', `` to string or none to numbers.
         to most property separete with ,
         this have two properties:
         
@@ -23,7 +23,7 @@
 **/
         var exampleObject = {
             "data": 1,
-            "properties": "Hello object"
+            "properties": "Double quotes",
         };
 
         console.log(exampleObject); // {data: 1, properties: "Hello object"}
@@ -43,7 +43,24 @@
         console.log(objectIntoAnother) // {objectInto: {…}, data: 1}
 
 /**
-        To access property of object, insert . after its representation.
+        To access property of object, insert . after its representation or ["name property"].
         @example
 **/
         console.log(objectIntoAnother.data) // 1
+        console.log(objectIntoAnother["data"]) // 1
+/**
+        An object can declare a function into property value.
+        @example
+**/
+        var objectFuction = {
+            "myFunction" : function() {
+                console.log("Hello function");
+            }
+        }
+
+        objectFuction.myFunction();
+
+/** 
+        The object in javascript can instance another objects, following the object-oriented programming model.
+        @example
+**/

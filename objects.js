@@ -10,7 +10,7 @@
         @argument class
         @argument Object
 
-        @example
+        
         @var {Object} exampleObject, as declared utilizing @argument var, 
         are utilize {} to representation of object, into object their properties 
         can be declare between "", '' or none, by default utilize "", after declare, set the value with :
@@ -19,6 +19,7 @@
         
         @argument {number} data
         @argument {string} properties
+        @example
 **/
         var exampleObject = {
             "data": 1,
@@ -29,8 +30,8 @@
 
 /**      
         An object can own another object, as in the example.
-        @example
         @var {Object} objectIntoAnother
+        @example
 **/
         var objectIntoAnother = {
             "objectInto": {

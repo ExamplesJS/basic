@@ -23,7 +23,7 @@
 **/
         var exampleObject = {
             "data": 1,
-            "properties": "Double quotes",
+            "properties": "Hello object",
         };
 
         console.log(exampleObject); // {data: 1, properties: "Hello object"}

@@ -1,17 +1,20 @@
 /**
     @description
-        Variáveis são representações dinâmicas de uma propriedade ou dado.
-        Em javascript possuímos três tipos de declaração para váriaveis:
-    @argument var @description
-        representa uma váriavel de escopo global ou de função, dependendo de onde é declarada.
-    @argument let @description
-        representa uma váriavel somente de escopo de onde é declarada.
-    @argument const @description
-        representa uma váriavel constante que não muda após ser definida, uma constante tem que ser definida.
-
+        Variables are dynamic representations of a property or given.
+        In javascript we have three types of declaration for various variables:
+    @argument var 
+        @description
+        represents a global or function scope variable, depending on where it is declared.
+    @argument let 
+        @description
+        represents a range-only variable from where it is declared.
+    @argument const 
+        @description
+        
+represents a constant variable that does not change after being defined, a constant has to be defined.
     @description 
-        Ao adicionar o sinal de =  ao lado da váriavel, 
-        é atribuído na váriavel o valor que for definido.
+    By adding the = sign to the side of the variable,
+    is assigned in the variable the value that is defined.
     @example 
         var variable = 1; 
         let escopeVariable = 2;
@@ -19,22 +22,24 @@
 **/
 
 /** 
-    @example @argument var 
-    Váriavel @var variable declarada dentro de um objeto é visível fora do seu escopo. 
+    @argument var
+    variable @var variable declarada dentro de um objeto é visível fora do seu escopo. 
+     @example 
 **/
     {
         var variable = 1;
     }
     console.log(variable); // 1
 /**
-    Atribuir novo valor na váriavel.
+    Assign new value in the variable.
 **/
     variable = 2;
     console.log(variable); // 2
 
 /**
-    @example @argument let
-    Váriavel @var escopeVariavel declarada dentro de um objeto não é visível fora do seu escopo. 
+    @argument let 
+    variable @let escopeVariavel declared within an object is not visible outside its scope
+    @example  
 **/
     let escopeVariable;
     {
@@ -42,18 +47,19 @@
     }
     console.log(escopeVariable); // undefined
 /**
-    Atribuí valor a váriavel 
+    Assign new value in the variable.
 **/
     escopeVariable = 1;
     console.log(variable); // 1
 
 /**
-    @example @argument const
-    Váriavel @const constantVariable uma vez declarada não será possível alterar o seu valor. 
+    @argument const
+    Váriavel @const constantVariable once declared, it will not be possible to change its value.
+    @example  
 **/
     const constantVariable = 1;
     console.log(constantVariable); // 1
 /**
-    Ao atribuir novo valor a constante, aparecerá um erro.
+    When you assign a new value to the constant, an error will appear.
     constantVariable = 2; // error: Assignment to constant variable.
 **/

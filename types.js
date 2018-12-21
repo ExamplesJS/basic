@@ -1,83 +1,84 @@
 /**
     @description
-        Variáveis em Javascript possuem tipagem fraca, isso é podem assumir qualquer estado
-        no decorrer da execução, onde podem possuir tipos dinâmicos ou tipos de dados.
+        Javascript variables have weak typing, this is can assume any state
+        in the course of execution, where they may have dynamic types or data types.
         
-        Tipos dinâmicos
-            Os tipo dinâmicos utilizados em javascript são:
+        Dynamic types
+            The dynamic types used in javascript are:
             
             @argument number 
                 @description
-                Representa uma váriavel do tipo número.
+                Represents a number-type variable.
             
             @argument string 
                 @description
-                Representa uma váriavel do tipo texto.
+                Represents a text-type variable.
             
             @argument boolean 
                 @description
-                Representa uma váriavel do tipo lógico.
+                Represents a logical type variable.
 
-        @example @argument number
-        Váriavel @var {number} numberVar recebe um número e assume o tipo number.
-        @argument typeof mostra o tipo de dado que a váriavel possuí no momento.
+        @argument number
+        Variable @var {number} numberVar receives a number and assumes the type number.
+        @argument typeof shows the type of data that the.
+        @example 
 **/
         var numberVar = 0;
         console.log(numberVar); // 0
         console.log(typeof numberVar); // number
         
 /** 
-        @example @argument string
-        Váriavel @var {string} strVar recebe um texto e assume o tipo string.
+        @argument string 
+        Variable @var {string} strVar receives a text and assumes the string type.
+        @example 
 **/
         var strVar = "Hello types";
         console.log(strVar); // Hello types
         console.log(typeof strVar); // string
 
 /** 
-        @example @argument boolean
-        Váriavel @var {boolean} logicVar recebe uma atribuição lógica true e assume o tipo boolean.
+        @argument boolean
+        Váriavel @var {boolean} logicVar receives a logical assignment true and assumes the boolean type.
+        @example 
 **/
         var logicVar = true;
         console.log(logicVar); // true
         console.log(typeof logicVar); // boolean
 /**
-        Tipos de dados primitivos
-        Os tipo de dados primitivos utilizados em javascript são:
+        Primitive data types
+        The primitive data types used in javascript are:
         
         @argument Boolean
-            @description
-            Representa um dado na váriavel do tipo boolean, 
-            onde pode ser atribuída as condições lógicas true e false.
+                @description
+                Represents a data in the boolean type variable, where the logical conditions true and false can be assigned.
         
         @argument Null 
-            @description
-            Representa um dado na váriavel do tipo null, 
-            onde é considerada nula ou inválida.
+                @description
+                Represents a data in the null-type variable, where it is considered null or invalid.        
         
         @argument Undefined 
-            @description 
-            Representa um dado na váriavel do tipo undefined, 
-            onde é considerada indefinida.
+                @description 
+                Represents a data in the variable of type undefined, where it is considered indefinite.
        
         @argument Number
-            @description
-            Representa um dado na váriavel do tipo number, 
-            onde pode ser considerada qualquer número entre 
-            -(2^53 - 1) e (2^53 - 1), e três tipo simbolicos:
-            @argument +Infinity, significa um número infinito positivo.
-            @argument -Infinity, significa um número infinito negativo.
-            @argument NaN, que significa não é um número.
+                @description
+                Represents a data in the number type variable,
+                where any number between
+                - (2 ^ 53-1) and (2 ^ 53-1), and three symbolic types:
+                @argument + Infinity, means a positive infinite number.
+                @argument -Infinity means a negative infinite number.
+                @argument NaN, which means is not a number.
         
-        @argument String
-            @description
-            Representa um dado na váriavel do tipo string, 
-            onde é considerada qualquer tipo de texto circundado por "", '' ou ``.
+        @argument String 
+                @description
+                Represents a data in the string-type variable,
+                where any kind of text surrounded by "", "or" is considered.
 **/
 /**
-        @example @argument Boolean
-        Váriavel @var {boolean} logicVar  como já declarada nesse documento, essa vai ser reutiliza-da,
-        recebendo uma atribuição lógica false e assume o tipo boolean.
+        @argument Boolean
+        Variable @var {boolean} logicVar as already stated in this document, this will be reused,
+        receiving a logical assignment false and assumes the boolean type.
+        @example 
 **/
         console.log(logicVar); // true
         
@@ -87,16 +88,18 @@
         console.log(typeof logicVar); // boolean
 
 /**
-        @example @argument Null
-        Váriavel @var {object} nullVar recebe uma atribuição null.
+        @argument Null
+        Variable @var {object} nullVar gets an null assignment.
+        @example 
 **/
         var nullVar = null;
 
         console.log(nullVar); // false
         console.log(typeof nullVar); // object
 /**
-        @example @argument Undefined
-        Váriavel @var {undefined} undefinedVar ao não atribuir valor a uma váriavel essa se torna undefined.
+        @argument Undefined
+        Variable @var {undefined} undefinedVar not assigning value to a variable that becomes undefined.
+        @example 
 **/
         var undefinedVar;
 
@@ -104,9 +107,9 @@
         console.log(typeof nullVar); // undefined
 
 /**
-        @example @argument Number
-        Váriavel @var {number} numberVar  como já declarada nesse documento, 
-        essa vai ser reutiliza-da, recebendo um novo número.
+        @argument Number
+        Variable @var {number} numberVar as already stated in this document, it will be reused, receiving a new number.
+        @example 
 **/
         console.log(numberVar); // 1
         
@@ -118,9 +121,9 @@
         console.log(typeof -Infinity); // number
         console.log(typeof NaN); // number
 /**
-        @example @argument String
-        Váriavel @var {string} strVar  como já declarada nesse documento, 
-        essa vai ser reutiliza-da, recebendo um novo texto.
+        @argument String
+        Variable @var {string} strVar  as already stated in this document, it will be reused, receiving a new text.
+        @example  
 **/
         console.log(strVar); // Hello types
 
@@ -130,5 +133,5 @@
         console.log(typeof strVar); // string
 /** 
         Object type
-        Há também o tipo @argument object, esse por ser mais complexo será tratado em um arquivo em separado.
+        There is also the type @argument object, this being more complex will be treated in a separate file.
 **/

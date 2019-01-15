@@ -1,5 +1,5 @@
 /**
-    @description
+        @description
         Javascript object are structure represented that may have data, properties or functions,
         an object has a dynamic type, which can be any dynamic or primitive type.
         For utilize the object declare:
@@ -60,7 +60,62 @@
 
         objectFuction.myFunction();
 
-/** 
+/**
+@description
         The object in javascript can instance another objects, following the object-oriented programming model.
+        Exist two types of instances. 
+        
+        @class ClassExample 
+        added in ECMAScript 2015, is most utilized to instance objects.
+        In to example is utilized the method constructor, which receives by parameters two properties.
+        
+        @param {String} textParam
+        @param {number} numberParam
+
+        @argument {Object} this utilize to reference of class.
+
         @example
 **/
+        class ClassExample {
+                constructor(textParam, numberParam) {
+                        this.textParam = textParam;
+                        this.numberParam = numberParam;
+                }
+        }
+/**     
+        Utilize the @argument new, what create an object instance @class Person
+        @example
+**/
+        var classExample = new ClassExample("Hello class", 1);
+
+        console.log(classExample.textParam); // "Hello class"
+        console.log(classExample.numberParam); // 1
+/**
+        There are also object instance per function declaration.
+        In to example is utilized the method constructor, which receives by parameters two properties.
+
+        @argument {Object} InstanceFunction
+
+        @param {String} textParam
+        @param {number} numberParam
+
+        @argument {Object} this Also here utilize to reference of function/object.
+
+        @example
+**/
+        var InstanceFunction = function(textParam, numberParam) {
+                this.textParam = textParam;
+                this.numberParam = numberParam;
+        }
+/**     
+        Utilize the @argument new, what create an object instance @argument {Object} InstanceFunction
+        @example
+**/
+        var instanceFunction = new InstanceFunction("Hello instance function", 2);
+
+        console.log(instanceFunction.textParam); // "Hello instance function"
+        console.log(instanceFunction.numberParam); // 2
+
+        /**
+        function methods and property of class and object, will be treated in a separate file. 
+        **/

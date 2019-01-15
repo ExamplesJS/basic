@@ -23,7 +23,7 @@ represents a constant variable that does not change after being defined, a const
 
 /** 
     @argument var
-    variable @var variable declarada dentro de um objeto é visível fora do seu escopo. 
+    variable @var variable declared within an object is visible outside its scope.
      @example 
 **/
     {

@@ -26,6 +26,8 @@ represents a constant variable that does not change after being defined, a const
     variable @var variable declared within an object is visible outside its scope.
      @example 
 **/
+    var variable;
+
     {
         var variable = 1;
     }
@@ -50,7 +52,7 @@ represents a constant variable that does not change after being defined, a const
     Assign new value in the variable.
 **/
     escopeVariable = 1;
-    console.log(variable); // 1
+    console.log(escopeVariable); // 1
 
 /**
     @argument const
